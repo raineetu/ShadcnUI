@@ -1,11 +1,10 @@
-import { Button } from "@/components/ui/button"
+import { RouterProvider } from "react-router-dom";
+import router from "./router/Router";
 
 function App() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-svh">
-      <Button variant={'destructive'}>Click me</Button>
-    </div>
-  )
+    <RouterProvider router={router} />
+  );
 }
 
-export default App
+export default App;
